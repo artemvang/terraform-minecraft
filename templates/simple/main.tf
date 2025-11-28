@@ -14,7 +14,6 @@ provider "hcloud" {
 resource "random_id" "server_id" {
   byte_length = 4
 }
-
 locals {
   server_id = random_id.server_id.hex
 }
